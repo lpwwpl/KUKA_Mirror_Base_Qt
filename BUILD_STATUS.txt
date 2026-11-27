@@ -1,0 +1,17 @@
+Build verification status
+=========================
+
+1. mirrorcore.cpp + tests/core_test.cpp
+   - Compiled with g++ -std=c++17 -Wall -Wextra -Wpedantic
+   - Passed
+   - Recovered sample BASE:
+     {X 1440, Y -70, Z 520, A 0, B -20.8, C 0}
+
+2. mirrorcore.cpp + tests/generate_sample.cpp
+   - Compiled and executed
+   - Generated 1685 trajectory points and sample KRL/CSV/report files
+
+3. Qt Widgets GUI
+   - Source and CMake project completed
+   - Not compiled in this execution environment because Qt development packages are not installed
+   - Open CMakeLists.txt in Qt Creator with a Qt 6.5+ Desktop Kit to build
